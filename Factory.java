@@ -4,11 +4,14 @@
  * Hoja de Trabajo 6
  * 6-03-2023
  */
-import java.util.*;
+import structure5.*;
 
-public class Factory<T> {
 
-    private IEstructuraArbol<Palabra> arbol;
+public class Factory {
+
+    private IEstructuraArbol<Palabra> resultado;
+
+    private ComparadorPalabras<Palabra> comparator = new ComparadorPalabras<Palabra>();
     
     /** 
      * @param tipo
@@ -19,21 +22,21 @@ public class Factory<T> {
     
         switch (tipo) {
             case 1:
-            arbol = new ArbolRedBlack<Palabra>(); 
+            resultado = new ArbolRedBlack<Palabra>(); 
             break;
 
             case 2:
-            arbol = new ArbolSplay<>();
+            resultado = new ArbolSplay<Palabra>();
             break;
 
             case 3:
-            //hash = new TreeMap<String, ArrayList<String>>();
+            resultado = new ArbolBinary<Palabra>();
             break;
 
             default:
             break;
         }
-        return arbol;
+        return resultado;
 
     } 
 }
