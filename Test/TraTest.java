@@ -29,6 +29,14 @@ class TraTest {
 		assertEquals("casa", busqueda1.getSpanish());
 	}
 
+	@Test
+	void binary() {
+		ArbolSplay<Palabra> resultado1 = new ArbolSplay<Palabra>();
+		resultado1.add(new Palabra("house", "casa"));
+		Palabra busqueda1 = resultado1.get(new Palabra("house", "casa"));
+		assertEquals("casa", busqueda1.getSpanish());
+	}
+
 
 
 
