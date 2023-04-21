@@ -1,17 +1,16 @@
 /*
  * Diego Soto (22737)
  * Algoritmos y Estructuras de Datos Sección 40
- * Hoja de Trabajo 6
- * 6-03-2023
+ * Hoja de Trabajo 9
+ * 21-04-2023
  */
-import structure5.*;
+
 
 
 public class Factory {
 
     private IEstructuraArbol<Palabra> resultado;
 
-    private ComparadorPalabras<Palabra> comparator = new ComparadorPalabras<Palabra>();
     
     /** 
      * @param tipo

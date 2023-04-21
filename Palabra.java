@@ -1,5 +1,8 @@
-/**
- * 
+/*
+ * Diego Soto (22737)
+ * Algoritmos y Estructuras de Datos Sección 40
+ * Hoja de Trabajo 9
+ * 21-04-2023
  */
 
 /**
