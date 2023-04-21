@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import structure5.*;
-import structure5.SplayTree;
+
 
 public class Principal{
     public static void main(String[] args) {
@@ -23,7 +22,7 @@ public class Principal{
         }
 
         try{
-            System.out.println("Que tipo de arbol desea usar?: \n1. Arbol red black \n2. Arbol splay \n3. Arbol");
+            System.out.println("Que tipo de arbol desea usar?: \n1. Arbol red black \n2. Arbol splay \n3. Arbol binario");
             int tipo = teclado.nextInt();
             teclado.nextLine();
             arbol = generador.getInstance(tipo);
@@ -49,7 +48,7 @@ public class Principal{
                     traduccion = traduccion + palabra+ " ";
                 }
                 System.out.println("Oración traducida: ");
-                System.out.println(traduccion);
+                System.out.println(traduccion+"\n");
             }
 
         } catch (Exception e){

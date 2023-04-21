@@ -1,3 +1,5 @@
+import java.util.Comparator;
+
 import structure5.BinarySearchTree;
 
 
@@ -9,6 +11,9 @@ public class ArbolBinary<T extends Comparable<T>> implements IEstructuraArbol<T>
 		myInternalTree = new BinarySearchTree<T>();
 	}
 	
+	public ArbolBinary(Comparator<T> comparador){
+		myInternalTree = new BinarySearchTree<T>(comparador);
+	}
 	@Override
 	public void add(T value) {
 		myInternalTree.add(value);

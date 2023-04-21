@@ -31,9 +31,9 @@ class TraTest {
 
 	@Test
 	void binary() {
-		ArbolSplay<Palabra> resultado1 = new ArbolSplay<Palabra>();
+		ArbolBinary<Palabra> resultado1 = new ArbolBinary<Palabra>();
 		resultado1.add(new Palabra("house", "casa"));
-		Palabra busqueda1 = resultado1.get(new Palabra("house", "casa"));
+		Palabra busqueda1 = resultado1.get(new Palabra("house", ""));
 		assertEquals("casa", busqueda1.getSpanish());
 	}
 
